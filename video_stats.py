@@ -119,6 +119,7 @@ if __name__ == "__main__":
     video_ids = get_video_ids(playlistId)
     # print(extract_video_data(video_ids))
     video_data = extract_video_data(video_ids)
+    # print(video_data)
     save_to_json(video_data)
 
 
