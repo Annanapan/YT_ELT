@@ -122,16 +122,3 @@ if __name__ == "__main__":
     # print(video_data)
     save_to_json(video_data)
 
-
-    
-
-
-
-
-
-
-
-
-
-
-
