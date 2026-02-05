@@ -78,7 +78,7 @@ def update_rows(cur, conn, schema, row):
         logger.error(f"Error updating row witH Video_ID: {row[video_id]} - {e}")
         raise e
 
-def delete_rows(cur, conn, schema, table, ids_to_delete):
+def delete_rows(cur, conn, schema, ids_to_delete):
     try:
         # Convert list of IDs into SQL-friendly tuple string
         ids_to_delete = f"""({', '.join(f"'{id}'" for id in ids_to_delete)})"""
